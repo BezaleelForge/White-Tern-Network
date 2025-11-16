@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bezaleel — Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <div class="brand">BEZALEEL</div>
+      <nav class="main-nav">
+        <a href="#work">WORK</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+      <button class="menu-toggle" aria-label="menu">☰</button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-inner">
+          <h1 class="title glitch" data-text="BEZALEEL">BEZALEEL</h1>
+          <p class="subtitle">Software Engineer — App Dev / Web Dev / Problem Solver</p>
+          <div class="cta">
+            <a href="#work" class="btn">View Work</a>
+            <a href="#contact" class="btn ghost">Get in Touch</a>
+          </div>
+        </div>
+        <div class="scanlines" aria-hidden="true"></div>
+        <div class="vignette" aria-hidden="true"></div>
+      </section>
+
+      <section id="work" class="section projects">
+        <h2 class="section-title">Selected Work</h2>
+        <div class="cards">
+
+          <article class="card">
+            <div class="card-top">
+              <img src="assets/logos/omedehub-logo.png" class="project-logo" alt="Omede Hub Logo">
+              <div class="card-media" style="background-image:url('assets/works/omedehub.jpg')"></div>
+            </div>
+            <div class="card-body" >
+              <h3>White Tern Network</h3>
+              <p>Family website with gallery, animated UI, and progressive enhancements.</p>
+              <a class="card-link" href="https://omedehub.netlify.app/" >Live →</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <h2 class="section-title">About</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Hi — I’m Bezaleel. I build beautiful, fast, and accessible web apps. I focus on thoughtful UI, clean code, and dependable backends.</p>
+            <ul>
+              <li>Frontend: HTML, CSS, JS (Learning), React (Learning)</li>
+              <li>Backend: Node.js (Learning)</li>
+              <li>Addition Skills: Editing, Linux Experience, 3D Modeling.</li>
+            </ul>
+          </div>
+          <div class="about-photo" style="background-image:url('assets/me.jpg')" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <h2 class="section-title">Contact</h2>
+        <form id="contactForm" class="contact-form">
+          <input name="name" placeholder="Your name" required>
+          <input name="email" type="email" placeholder="Your email" required>
+          <textarea name="message" placeholder="Message" rows="5" required></textarea>
+          <button type="submit" class="btn">Send message</button>
+          <p id="formResp" class="form-resp"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <small>© 2025 Bezaleel Omede</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
